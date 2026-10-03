@@ -1,0 +1,28 @@
+generated: '2026-10-03'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://docs.mitto.ch/privacy-policy/
+sources:
+- https://docs.mitto.ch/privacy-policy/
+standards:
+- id: gdpr
+  conforms: true
+  evidence: Mitto AG, represented by its sole managing director, Mr Andrea Giacomini, is the responsible controller within the meaning of EU Regulation
+    2016/679 of 27 April 2016 (General Data Protection Regulation) (“GDPR”).
+- id: gdpr
+  conforms: true
+  evidence: We are committed to the responsible handling of your personal data. Consequently, we comply with the requirements of the GDPR, the
+    applicable national data protection laws and other provisions of the applicable data protection regulations.
+- id: openapi-3.1
+  conforms: true
+  evidence: the document declares 3.1.0
+- id: oauth2
+  conforms: false
+  evidence: 'securitySchemes: X-Mitto-API-Key (apiKey)'
+- id: rfc9457
+  conforms: false
+  evidence: no response declares application/problem+json
+- id: idempotency
+  conforms: false
+  evidence: no idempotency key parameter on mutating operations
+docs: https://docs.mitto.ch/privacy-policy/

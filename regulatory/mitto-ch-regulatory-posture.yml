@@ -1,0 +1,125 @@
+generated: '2026-10-03'
+signals: []
+method: searched
+source: https://docs.mitto.ch/privacy-policy/
+posture:
+  data_subject_request:
+    claim: "Provides rights to information, deletion and correction as well as complaint"
+    evidence:
+      source: https://docs.mitto.ch/privacy-policy/
+      http_status: 200
+      fetched: true
+      quote: "Right to information, deletion and correction as well as complaint"
+      note: Indicates data subjects can request access, deletion, correction, and lodge complaints.
+  data_retention:
+    claim: "Data will be deleted as soon as it is no longer necessary for the purpose of its collection"
+    evidence:
+      source: https://docs.mitto.ch/privacy-policy/
+      http_status: 200
+      fetched: true
+      quote: "The data will be deleted as soon as it is no longer necessary for the purpose of its collection."
+      note: Describes retention period policy.
+  subprocessors:
+    claim: "Transfer of personal data to third parties"
+    evidence:
+      source: https://docs.mitto.ch/privacy-policy/
+      http_status: 200
+      fetched: true
+      quote: "Transfer of personal data to third parties"
+      note: Indicates use of subprocessors.
+  incident_notification:
+    claim: "No explicit incident notification clause found"
+    evidence:
+      source: https://docs.mitto.ch/privacy-policy/
+      http_status: 200
+      fetched: true
+      quote: ""
+      note: Privacy policy does not mention breach notification procedures.
+  ai_transparency:
+    claim: "No AI-specific transparency statements found"
+    evidence:
+      source: https://docs.mitto.ch/privacy-policy/
+      http_status: 200
+      fetched: true
+      quote: ""
+      note: No mention of AI processing.
+  data_residency:
+    claim: "No data residency information provided"
+    evidence:
+      source: https://docs.mitto.ch/privacy-policy/
+      http_status: 200
+      fetched: true
+      quote: ""
+      note: No location of data storage disclosed.
+  global_privacy_control:
+    claim: "No GPC support mentioned"
+    evidence:
+      source: https://docs.mitto.ch/privacy-policy/
+      http_status: 200
+      fetched: true
+      quote: ""
+      note: No reference to Global Privacy Control.
+  exit_assistance:
+    claim: "No exit assistance details provided"
+    evidence:
+      source: https://docs.mitto.ch/privacy-policy/
+      http_status: 200
+      fetched: true
+      quote: ""
+      note: No exit assistance clause.
+  notice_and_action:
+    claim: "Provides notice of privacy policy changes"
+    evidence:
+      source: https://docs.mitto.ch/privacy-policy/
+      http_status: 200
+      fetched: true
+      quote: "Please note that the following information may be reviewed and changed from time to time. We therefore recommend that you regularly consult our privacy policy."
+      note: Indicates notice of policy updates.
+  accessibility_conformance:
+    claim: "No accessibility statements found"
+    evidence:
+      source: https://docs.mitto.ch/privacy-policy/
+      http_status: 200
+      fetched: true
+      quote: ""
+      note: No accessibility compliance mentioned.
+  support_lifetime:
+    claim: "No support lifetime information provided"
+    evidence:
+      source: https://docs.mitto.ch/privacy-policy/
+      http_status: 200
+      fetched: true
+      quote: ""
+      note: Not addressed.
+  age_assurance:
+    claim: "No age assurance statements found"
+    evidence:
+      source: https://docs.mitto.ch/privacy-policy/
+      http_status: 200
+      fetched: true
+      quote: ""
+      note: No mention of age verification.
+  sbom:
+    claim: "No SBOM information provided"
+    evidence:
+      source: https://docs.mitto.ch/privacy-policy/
+      http_status: 200
+      fetched: true
+      quote: ""
+      note: Not applicable.
+  training_data_summary:
+    claim: "No training data summary provided"
+    evidence:
+      source: https://docs.mitto.ch/privacy-policy/
+      http_status: 200
+      fetched: true
+      quote: ""
+      note: Not applicable.
+  transparency_report:
+    claim: "No transparency report mentioned"
+    evidence:
+      source: https://docs.mitto.ch/privacy-policy/
+      http_status: 200
+      fetched: true
+      quote: ""
+      note: Not mentioned.

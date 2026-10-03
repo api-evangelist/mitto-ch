@@ -1,0 +1,18 @@
+generated: '2026-10-03'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://documentation.mitto.ch/solutions/editor/preferences/api-keys.md
+sources:
+- https://documentation.mitto.ch/solutions/editor/preferences/api-keys.md
+- https://documentation.mitto.ch/apis/sms/authentication.md
+- https://documentation.mitto.ch/getting-started/quickstart.md
+- https://documentation.mitto.ch/getting-started/glossary.md
+description: Authentication for Mitto SMS API
+schemes:
+- type: apiKey
+  name: X-Mitto-API-Key
+  evidence: 'To authenticate, you pass your **API key** in the header of the request like this:'
+  location: header
+  header: X-Mitto-API-Key
+  how_to_obtain: Create an account, then retrieve the API key from Preferences in the Mitto dashboard.
+docs: https://documentation.mitto.ch/solutions/editor/preferences/api-keys.md

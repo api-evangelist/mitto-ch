@@ -1,0 +1,117 @@
+{
+  "@context": {
+    "@vocab": "https://mitto.ch/schema#",
+    "schema": "https://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "mitto": "https://mitto.ch/schema#",
+    "DeleteApiV11AutoreplyconfigsIdTrafficaccountsTrafficaccounti": "mitto:DeleteApiV11AutoreplyconfigsIdTrafficaccountsTrafficaccounti",
+    "PostApiV11AutoreplyconfigsIdTrafficaccountsTrafficaccountidR": "mitto:PostApiV11AutoreplyconfigsIdTrafficaccountsTrafficaccountidR",
+    "PostApiV11CustomersCustomeridRequest": "mitto:PostApiV11CustomersCustomeridRequest",
+    "oldPassword": {
+      "@id": "mitto:oldPassword",
+      "@type": "xsd:string"
+    },
+    "newPassword": {
+      "@id": "mitto:newPassword",
+      "@type": "xsd:string"
+    },
+    "GetApiV11StatisticStatisticidResponse": "mitto:GetApiV11StatisticStatisticidResponse",
+    "GetApiV11V11IdResponse": "mitto:GetApiV11V11IdResponse",
+    "PostApiV11V11IdRequest": "mitto:PostApiV11V11IdRequest",
+    "body": {
+      "@id": "mitto:body",
+      "@type": "xsd:string"
+    },
+    "PostApiV11V11IdResponse": "mitto:PostApiV11V11IdResponse",
+    "DeleteApiV11V11IdIdResponse": "mitto:DeleteApiV11V11IdIdResponse",
+    "GetApiV11V11IdIdResponse": "mitto:GetApiV11V11IdIdResponse",
+    "PutApiV11V11IdIdRequest": "mitto:PutApiV11V11IdIdRequest",
+    "PutApiV11V11IdIdResponse": "mitto:PutApiV11V11IdIdResponse",
+    "PostApiV1CustomersCustomeridRequest": "mitto:PostApiV1CustomersCustomeridRequest",
+    "GetApiV1StatisticStatisticidResponse": "mitto:GetApiV1StatisticStatisticidResponse",
+    "PostApiV1WebhooksRequest": "mitto:PostApiV1WebhooksRequest",
+    "url": {
+      "@id": "mitto:url",
+      "@type": "xsd:string"
+    },
+    "description": {
+      "@id": "mitto:description",
+      "@type": "xsd:string"
+    },
+    "webhookTriggers": {
+      "@id": "mitto:webhookTriggers",
+      "@type": "xsd:string"
+    },
+    "headers": {
+      "@id": "mitto:headers",
+      "@type": "xsd:string"
+    },
+    "linkTrafficAccountIds": {
+      "@id": "mitto:linkTrafficAccountIds",
+      "@type": "xsd:string"
+    },
+    "PostApiV1WebhooksResponse": "mitto:PostApiV1WebhooksResponse",
+    "DeleteApiV1WebhooksIdResponse": "mitto:DeleteApiV1WebhooksIdResponse",
+    "PutApiV1WebhooksIdRequest": "mitto:PutApiV1WebhooksIdRequest",
+    "PutApiV1WebhooksIdResponse": "mitto:PutApiV1WebhooksIdResponse",
+    "GetApiV1V1IdResponse": "mitto:GetApiV1V1IdResponse",
+    "GetApiV1V1IdIdResponse": "mitto:GetApiV1V1IdIdResponse",
+    "messageId": {
+      "@id": "mitto:messageId",
+      "@type": "xsd:string"
+    },
+    "text": {
+      "@id": "mitto:text",
+      "@type": "xsd:string"
+    },
+    "mediaUrl": {
+      "@id": "mitto:mediaUrl",
+      "@type": "xsd:string"
+    },
+    "sender": {
+      "@id": "mitto:sender"
+    },
+    "conversation": {
+      "@id": "mitto:conversation"
+    },
+    "createdAt": {
+      "@id": "mitto:createdAt",
+      "@type": "xsd:string"
+    },
+    "updatedAt": {
+      "@id": "mitto:updatedAt",
+      "@type": "xsd:string"
+    },
+    "trafficAccountId": {
+      "@id": "mitto:trafficAccountId",
+      "@type": "xsd:string"
+    },
+    "deliveryStatus": {
+      "@id": "mitto:deliveryStatus",
+      "@type": "xsd:string"
+    },
+    "quotedMessageId": {
+      "@id": "mitto:quotedMessageId",
+      "@type": "xsd:string"
+    },
+    "messageParts": {
+      "@id": "mitto:messageParts",
+      "@type": "xsd:integer"
+    },
+    "requestInfo": {
+      "@id": "mitto:requestInfo"
+    },
+    "reference": {
+      "@id": "mitto:reference",
+      "@type": "xsd:string"
+    }
+  },
+  "@type": "schema:Dataset",
+  "schema:name": "Mitto API JSON-LD context",
+  "schema:description": "A JSON-LD @context for the objects Mitto's own API contract declares: one class per component schema, one property per declared field, typed from the contract. Derived by script (derive-json-ld.py, 2026-10-03) from openapi/_ae-authored/mitto-ch-openapi-generated.yml.",
+  "dcterms:created": "2026-10-03",
+  "dcterms:source": [
+    "openapi/_ae-authored/mitto-ch-openapi-generated.yml"
+  ]
+}

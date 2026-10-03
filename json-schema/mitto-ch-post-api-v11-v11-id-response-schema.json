@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/mitto-ch/main/json-schema/mitto-ch-post-api-v11-v11-id-response-schema.json",
+  "title": "PostApiV11V11IdResponse",
+  "x-generated": "2026-10-03",
+  "x-method": "derived",
+  "x-generator": "derive-json-schema.py",
+  "x-source": "openapi/_ae-authored/mitto-ch-openapi-generated.yml#/components/schemas/PostApiV11V11IdResponse",
+  "type": "object",
+  "properties": {
+    "200": {
+      "type": "string",
+      "description": "Created Get auto reply config"
+    },
+    "400": {
+      "type": "string"
+    },
+    "403": {
+      "type": "string"
+    }
+  }
+}

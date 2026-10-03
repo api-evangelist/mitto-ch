@@ -1,23 +1,123 @@
 aid: mitto-ch
+
 name: Mitto
-description: 'Mitto is a company surfaced via the API Evangelist harvest backlog (source: gartner-mq)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://mitto.ch/wp-content/uploads/2025/06/adobe-1.svg
+
+description: Mitto provides omnichannel messaging solutions, enabling businesses to engage customers across SMS, RCS, voice, Telegram, Viber,
+  WhatsApp, Facebook Messenger, and Instagram. Their platform offers products for campaigns, conversations, number lookup, verification, and integrates
+  with HubSpot, Salesforce, Zoho, and Oracle Responsys. Mitto aims to streamline communication, improve customer experiences, and support omnichannel
+  strategies for enterprises worldwide.
+
 url: https://raw.githubusercontent.com/api-evangelist/mitto-ch/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:gartner-mq
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-03 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-03'
+
 modified: '2026-10-03'
+
 tags:
-- Company
-apis: []
+- Messaging
+- Omnichannel
+- Communications
+- Enterprise
+- API
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: GettingStarted
+  url: https://documentation.mitto.ch/getting-started/quickstart
+- type: Spectral
+  url: rules/mitto-ch-rules.yml
+- type: JSONLD
+  url: json-ld/mitto-ch-context.jsonld
+- type: Vocabulary
+  url: vocabulary/mitto-ch-vocabulary.yml
+- type: DataModel
+  url: data-model/mitto-ch-data-model.yml
+- type: Authentication
+  url: authentication/mitto-ch-authentication.yml
+- type: Conformance
+  url: conformance/mitto-ch-conformance.yml
+- type: LLMsTxt
+  url: llms/mitto-ch-llms.txt
+- type: SecurityTxt
+  url: well-known/mitto-ch-status-security.txt
+- type: WellKnown
+  url: well-known/mitto-ch-well-known.yml
+- type: Hosts
+  url: hosts/mitto-ch-hosts.yml
+- type: Vendors
+  url: vendors/mitto-ch-vendors.yml
+- type: StatusPage
+  url: https://status.mitto.ch/
+- type: PrivacyPolicy
+  url: https://mitto.ch/privacy-policy
+- type: SignUp
+  url: https://dashboard.mitto.ch/signup
+- type: DomainSecurity
+  url: security/mitto-ch-domain-security.yml
 - type: Website
   url: https://www.mitto.ch
+- type: Documentation
+  url: https://documentation.mitto.ch
+- type: APIReference
+  url: https://documentation.mitto.ch/api-reference.md
+- type: Pricing
+  url: https://mitto.ch/pricing/
+- type: Blog
+  url: https://mitto.ch/blog/
+- type: Support
+  url: https://mitto.ch/contact/
+
+apis:
+- aid: mitto-ch:mitto-ch-api
+  name: Mitto API
+  description: 'Mitto API as documented publicly: 17 operations. Contract generated from the documentation by API Evangelist (2026-10-03); not
+    the provider''s own document.'
+  humanURL: https://documentation.mitto.ch/apis/chat-apps/api/messages.md
+  baseURL: https://messaging.mittoapi.com
+  properties:
+  - type: OpenAPI
+    url: openapi/_ae-authored/mitto-ch-openapi-generated.yml
+    x-provenance: generated
+  - type: JSONSchema
+    url: json-schema/mitto-ch-get-api-v1-v1-id-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/mitto-ch-post-api-v1-webhooks-request-schema.json
+  - type: JSONSchema
+    url: json-schema/mitto-ch-put-api-v1-webhooks-id-request-schema.json
+  - type: JSONSchema
+    url: json-schema/mitto-ch-post-api-v11-customers-customerid-request-schema.json
+  - type: JSONSchema
+    url: json-schema/mitto-ch-post-api-v1-customers-customerid-request-schema.json
+  - type: JSONSchema
+    url: json-schema/mitto-ch-post-api-v11-v11-id-response-schema.json
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: Documentation is served via GitBook with no machine‑readable OpenAPI or other contract found.
+  evidence:
+  - url: https://documentation.mitto.ch
+    status: 200
+  checked: '2026-10-03'
+x-enrichment:
+  date: '2026-10-03'
+  status: enriched
+  artifacts_added: 27
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/mitto-ch/main/json-schema/mitto-ch-get-api-v1-v1-id-id-response-schema.json",
+  "title": "GetApiV1V1IdIdResponse",
+  "x-generated": "2026-10-03",
+  "x-method": "derived",
+  "x-generator": "derive-json-schema.py",
+  "x-source": "openapi/_ae-authored/mitto-ch-openapi-generated.yml#/components/schemas/GetApiV1V1IdIdResponse",
+  "type": "object",
+  "properties": {
+    "messageId": {
+      "type": "string",
+      "description": "Message id"
+    },
+    "text": {
+      "type": "string",
+      "description": "Message text"
+    },
+    "mediaUrl": {
+      "type": "string",
+      "description": "Message media URL"
+    },
+    "sender": {
+      "type": "object",
+      "description": "Message sender information"
+    },
+    "conversation": {
+      "type": "object",
+      "description": "Conversation information"
+    },
+    "createdAt": {
+      "type": "string",
+      "description": "Message creation date"
+    },
+    "updatedAt": {
+      "type": "string",
+      "description": "Message update date"
+    },
+    "trafficAccountId": {
+      "type": "string",
+      "description": "Message traffic account id"
+    },
+    "deliveryStatus": {
+      "type": "string",
+      "description": "Message delivery status"
+    },
+    "description": {
+      "type": "string",
+      "description": "Message status description"
+    },
+    "quotedMessageId": {
+      "type": "string",
+      "description": "Quoted message id"
+    },
+    "messageParts": {
+      "type": "integer",
+      "description": "Shows into how many parts is original message split. It is used only for SMS channel, for others it should be considered 1 by default (or if null)"
+    },
+    "requestInfo": {
+      "type": "object",
+      "description": "Details from original request"
+    },
+    "reference": {
+      "type": "string",
+      "description": "Metadata for tagging messages"
+    }
+  }
+}

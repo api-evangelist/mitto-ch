@@ -1,0 +1,99 @@
+generated: '2026-10-03'
+method: derived
+generator: derive-mcp-candidate.py
+source:
+- openapi/_ae-authored/mitto-ch-openapi-generated.yml
+status: candidate
+deployment:
+  mode: none
+  auth: unknown
+  verified: probed
+note: No MCP server was found. The pre-flight posted tools/list to /mcp on api.mitto.ch, www.mitto.ch, app.mitto.ch, dashboard.mitto.ch; verdict
+  absent. Candidate tools below are derived from the 17 operation(s) in the provider's own OpenAPI (17 listed); they describe what a server WOULD
+  expose, not one that exists.
+tools:
+- name: delete_api_v1_1_auto_reply_configs_id_traffic_accounts_traff
+  operationId: delete_api_v1_1_AutoReplyConfigs_id_trafficAccounts_trafficaccountid
+  method: DELETE
+  path: /api/v1.1/AutoReplyConfigs/{id}/trafficAccounts/{trafficaccountid}
+  description: Unlink auto reply config from traffic account
+- name: post_api_v1_1_auto_reply_configs_id_traffic_accounts_traffic
+  operationId: post_api_v1_1_AutoReplyConfigs_id_trafficAccounts_trafficaccountid
+  method: POST
+  path: /api/v1.1/AutoReplyConfigs/{id}/trafficAccounts/{trafficaccountid}
+  description: Link auto reply config to traffic account
+- name: post_api_v1_1_customers_customerid
+  operationId: post_api_v1_1_Customers_customerid
+  method: POST
+  path: /api/v1.1/Customers/{customerid}
+  description: Change password
+- name: get_api_v1_1_statistic_statisticid
+  operationId: get_api_v1_1_Statistic_statisticid
+  method: GET
+  path: /api/v1.1/Statistic/{statisticid}
+  description: Get monthly active users statistics
+- name: get_api_v1_1_v11id
+  operationId: get_api_v1_1_v11id
+  method: GET
+  path: /api/v1.1/{v11id}
+  description: Get auto reply configs
+- name: post_api_v1_1_v11id
+  operationId: post_api_v1_1_v11id
+  method: POST
+  path: /api/v1.1/{v11id}
+  description: Create auto reply config
+- name: delete_api_v1_1_v11id_id
+  operationId: delete_api_v1_1_v11id_id
+  method: DELETE
+  path: /api/v1.1/{v11id}/{id}
+  description: Delete auto reply config
+- name: get_api_v1_1_v11id_id
+  operationId: get_api_v1_1_v11id_id
+  method: GET
+  path: /api/v1.1/{v11id}/{id}
+  description: Get auto reply config by id
+- name: put_api_v1_1_v11id_id
+  operationId: put_api_v1_1_v11id_id
+  method: PUT
+  path: /api/v1.1/{v11id}/{id}
+  description: Update auto reply config
+- name: post_api_v1_customers_customerid
+  operationId: post_api_v1_Customers_customerid
+  method: POST
+  path: /api/v1/Customers/{customerid}
+  description: Change password
+- name: get_api_v1_statistic_statisticid
+  operationId: get_api_v1_Statistic_statisticid
+  method: GET
+  path: /api/v1/Statistic/{statisticid}
+  description: Get monthly active users statistics
+- name: post_api_v1_webhooks
+  operationId: post_api_v1_Webhooks
+  method: POST
+  path: /api/v1/Webhooks
+  description: Create webhook
+- name: delete_api_v1_webhooks_id
+  operationId: delete_api_v1_Webhooks_id
+  method: DELETE
+  path: /api/v1/Webhooks/{id}
+  description: Delete webhook
+- name: put_api_v1_webhooks_id
+  operationId: put_api_v1_Webhooks_id
+  method: PUT
+  path: /api/v1/Webhooks/{id}
+  description: Update webhook
+- name: get_api_v1_v1id
+  operationId: get_api_v1_v1id
+  method: GET
+  path: /api/v1/{v1id}
+  description: Get all traffic accounts
+- name: get_api_v1_v1id_id
+  operationId: get_api_v1_v1id_id
+  method: GET
+  path: /api/v1/{v1id}/{id}
+  description: Get message by Id
+- name: get_apis_sms_about_the_sms_api_reference_md
+  operationId: get_apis_sms_about_the_sms_api_reference_md
+  method: GET
+  path: /apis/sms/about-the-sms-api-reference.md
+  description: About the SMS API Reference

@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/mitto-ch/main/json-schema/mitto-ch-put-api-v1-webhooks-id-request-schema.json",
+  "title": "PutApiV1WebhooksIdRequest",
+  "x-generated": "2026-10-03",
+  "x-method": "derived",
+  "x-generator": "derive-json-schema.py",
+  "x-source": "openapi/_ae-authored/mitto-ch-openapi-generated.yml#/components/schemas/PutApiV1WebhooksIdRequest",
+  "type": "object",
+  "properties": {
+    "url": {
+      "type": "string",
+      "description": "Webhook url"
+    },
+    "description": {
+      "type": "string",
+      "description": "Webhook description to give it some extra info"
+    },
+    "webhookTriggers": {
+      "type": "string",
+      "description": "Webhook triggers list"
+    },
+    "headers": {
+      "type": "string",
+      "description": "Webhook http headers (optional)"
+    },
+    "linkTrafficAccountIds": {
+      "type": "string",
+      "description": "List of existing traffic account Ids to link to this webhook. Optional."
+    }
+  }
+}
