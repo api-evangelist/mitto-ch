@@ -1,0 +1,181 @@
+openapi: 3.2.0
+info:
+  title: Mitto Webhooks API
+  version: '2026-10-03'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-10-03: 17 operation(s) read from 7 public documentation page(s) (each operation names its page in x-source). This is not the provider''s published contract; Mitto has published no machine-readable contract that the pipeline could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 0
+    documentation: 17
+    pages-with-code: 0
+    pages-read: 7
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-10-03'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://documentation.mitto.ch/apis/chat-apps/api/messages.md
+  - https://documentation.mitto.ch/apis/chat-apps/api/webhooks.md
+  - https://documentation.mitto.ch/apis/chat-apps/api/customers.md
+  - https://documentation.mitto.ch/apis/chat-apps/api/statistic.md
+  - https://documentation.mitto.ch/apis/chat-apps/api/traffic-accounts.md
+  - https://documentation.mitto.ch/apis/sms/about-the-sms-api-reference.md
+  - https://documentation.mitto.ch/apis/chat-apps/api/auto-reply-configs.md
+servers:
+- url: https://messaging.mittoapi.com
+security:
+- X-Mitto-API-Key: []
+tags:
+- name: Webhooks
+paths:
+  /api/v1/Webhooks:
+    post:
+      operationId: post_api_v1_Webhooks
+      tags:
+      - Webhooks
+      summary: Create webhook
+      x-source: https://documentation.mitto.ch/apis/chat-apps/api/webhooks.md
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PostApiV1WebhooksRequest'
+      responses:
+        '201':
+          description: Success (status as documented)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PostApiV1WebhooksResponse'
+      x-evidence:
+        kind: documentation
+  /api/v1/Webhooks/{id}:
+    delete:
+      operationId: delete_api_v1_Webhooks_id
+      tags:
+      - Webhooks
+      summary: Delete webhook
+      x-source: https://documentation.mitto.ch/apis/chat-apps/api/webhooks.md
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: forceDelete
+        in: query
+        required: false
+        schema:
+          type: string
+        description: In case webhook is linked to some TrafficAccounts, setting this option to True will automatically unlink it from all TrafficAccounts prior to deleting it.
+      responses:
+        '200':
+          description: Success (status as documented)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DeleteApiV1WebhooksIdResponse'
+      x-evidence:
+        kind: documentation
+    put:
+      operationId: put_api_v1_Webhooks_id
+      tags:
+      - Webhooks
+      summary: Update webhook
+      x-source: https://documentation.mitto.ch/apis/chat-apps/api/webhooks.md
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PutApiV1WebhooksIdRequest'
+      responses:
+        '200':
+          description: Success (status as documented)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PutApiV1WebhooksIdResponse'
+      x-evidence:
+        kind: documentation
+components:
+  schemas:
+    DeleteApiV1WebhooksIdResponse:
+      type: object
+      properties:
+        '200':
+          type: string
+        '400':
+          type: string
+        '403':
+          type: string
+    PutApiV1WebhooksIdResponse:
+      type: object
+      properties:
+        '200':
+          type: string
+          description: Updated webhook
+        '400':
+          type: string
+        '403':
+          type: string
+    PostApiV1WebhooksResponse:
+      type: object
+      properties:
+        '201':
+          type: string
+          description: Created webhook
+        '400':
+          type: string
+        '403':
+          type: string
+    PutApiV1WebhooksIdRequest:
+      type: object
+      properties:
+        url:
+          type: string
+          description: Webhook url
+        description:
+          type: string
+          description: Webhook description to give it some extra info
+        webhookTriggers:
+          type: string
+          description: Webhook triggers list
+        headers:
+          type: string
+          description: Webhook http headers (optional)
+        linkTrafficAccountIds:
+          type: string
+          description: List of existing traffic account Ids to link to this webhook. Optional.
+    PostApiV1WebhooksRequest:
+      type: object
+      properties:
+        url:
+          type: string
+          description: Webhook url
+        description:
+          type: string
+          description: Webhook description to give it some extra info
+        webhookTriggers:
+          type: string
+          description: Webhook triggers list
+        headers:
+          type: string
+          description: Webhook http headers (optional)
+        linkTrafficAccountIds:
+          type: string
+          description: List of existing traffic account Ids to link to this webhook. Optional.
+  securitySchemes:
+    X-Mitto-API-Key:
+      type: apiKey
+      in: header
+      name: X-Mitto-API-Key
+      x-source: https://documentation.mitto.ch/solutions/editor/preferences/api-keys.md

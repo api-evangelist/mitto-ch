@@ -1,0 +1,113 @@
+openapi: 3.2.0
+info:
+  title: Mitto Customers API
+  version: '2026-10-03'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-10-03: 17 operation(s) read from 7 public documentation page(s) (each operation names its page in x-source). This is not the provider''s published contract; Mitto has published no machine-readable contract that the pipeline could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 0
+    documentation: 17
+    pages-with-code: 0
+    pages-read: 7
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-10-03'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://documentation.mitto.ch/apis/chat-apps/api/messages.md
+  - https://documentation.mitto.ch/apis/chat-apps/api/webhooks.md
+  - https://documentation.mitto.ch/apis/chat-apps/api/customers.md
+  - https://documentation.mitto.ch/apis/chat-apps/api/statistic.md
+  - https://documentation.mitto.ch/apis/chat-apps/api/traffic-accounts.md
+  - https://documentation.mitto.ch/apis/sms/about-the-sms-api-reference.md
+  - https://documentation.mitto.ch/apis/chat-apps/api/auto-reply-configs.md
+servers:
+- url: https://messaging.mittoapi.com
+security:
+- X-Mitto-API-Key: []
+tags:
+- name: Customers
+paths:
+  /api/v1.1/Customers/{customerid}:
+    post:
+      operationId: post_api_v1_1_Customers_customerid
+      tags:
+      - Customers
+      summary: Change password
+      x-source: https://documentation.mitto.ch/apis/chat-apps/api/customers.md
+      parameters:
+      - name: customerid
+        in: path
+        required: true
+        schema:
+          type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PostApiV11CustomersCustomeridRequest'
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+        collapsed_from: 2 example path(s) differing only at customerId
+  /api/v1/Customers/{customerid}:
+    post:
+      operationId: post_api_v1_Customers_customerid
+      tags:
+      - Customers
+      summary: Change password
+      x-source: https://documentation.mitto.ch/apis/chat-apps/api/customers.md
+      parameters:
+      - name: customerid
+        in: path
+        required: true
+        schema:
+          type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PostApiV1CustomersCustomeridRequest'
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+        collapsed_from: 2 example path(s) differing only at customerId
+components:
+  schemas:
+    PostApiV1CustomersCustomeridRequest:
+      type: object
+      properties:
+        oldPassword:
+          type: string
+          description: Old password
+        newPassword:
+          type: string
+          description: New password
+      required:
+      - oldPassword
+      - newPassword
+    PostApiV11CustomersCustomeridRequest:
+      type: object
+      properties:
+        oldPassword:
+          type: string
+          description: Old password
+        newPassword:
+          type: string
+          description: New password
+      required:
+      - oldPassword
+      - newPassword
+  securitySchemes:
+    X-Mitto-API-Key:
+      type: apiKey
+      in: header
+      name: X-Mitto-API-Key
+      x-source: https://documentation.mitto.ch/solutions/editor/preferences/api-keys.md

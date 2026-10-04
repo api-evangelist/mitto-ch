@@ -84,16 +84,16 @@ common:
   url: https://mitto.ch/contact/
 
 apis:
-- aid: mitto-ch:mitto-ch-api
-  name: Mitto API
-  description: 'Mitto API as documented publicly: 17 operations. Contract generated from the documentation by API Evangelist (2026-10-03); not
-    the provider''s own document.'
+- aid: mitto-ch:mitto-ch-apis-api
+  name: Mitto APIs API
+  description: The Apis API from Mitto — 1 operation(s) for apis.
   humanURL: https://documentation.mitto.ch/apis/chat-apps/api/messages.md
   baseURL: https://messaging.mittoapi.com
+  tags:
+  - Apis
   properties:
   - type: OpenAPI
-    url: openapi/_ae-authored/mitto-ch-openapi-generated.yml
-    x-provenance: generated
+    url: openapi/mitto-ch-apis-api-openapi.yml
   - type: JSONSchema
     url: json-schema/mitto-ch-get-api-v1-v1-id-id-response-schema.json
   - type: JSONSchema
@@ -106,7 +106,116 @@ apis:
     url: json-schema/mitto-ch-post-api-v1-customers-customerid-request-schema.json
   - type: JSONSchema
     url: json-schema/mitto-ch-post-api-v11-v11-id-response-schema.json
-
+- aid: mitto-ch:mitto-ch-autoreplyconfigs-api
+  name: Mitto Auto Reply Configs API
+  description: The AutoReplyConfigs API from Mitto — 1 operation(s) for autoreplyconfigs.
+  humanURL: https://documentation.mitto.ch/apis/chat-apps/api/messages.md
+  baseURL: https://messaging.mittoapi.com
+  tags:
+  - AutoReplyConfigs
+  properties:
+  - type: OpenAPI
+    url: openapi/mitto-ch-autoreplyconfigs-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/mitto-ch-get-api-v1-v1-id-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/mitto-ch-post-api-v1-webhooks-request-schema.json
+  - type: JSONSchema
+    url: json-schema/mitto-ch-put-api-v1-webhooks-id-request-schema.json
+  - type: JSONSchema
+    url: json-schema/mitto-ch-post-api-v11-customers-customerid-request-schema.json
+  - type: JSONSchema
+    url: json-schema/mitto-ch-post-api-v1-customers-customerid-request-schema.json
+  - type: JSONSchema
+    url: json-schema/mitto-ch-post-api-v11-v11-id-response-schema.json
+- aid: mitto-ch:mitto-ch-customers-api
+  name: Mitto Customers API
+  description: The Customers API from Mitto — 2 operation(s) for customers.
+  humanURL: https://documentation.mitto.ch/apis/chat-apps/api/messages.md
+  baseURL: https://messaging.mittoapi.com
+  tags:
+  - Customers
+  properties:
+  - type: OpenAPI
+    url: openapi/mitto-ch-customers-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/mitto-ch-get-api-v1-v1-id-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/mitto-ch-post-api-v1-webhooks-request-schema.json
+  - type: JSONSchema
+    url: json-schema/mitto-ch-put-api-v1-webhooks-id-request-schema.json
+  - type: JSONSchema
+    url: json-schema/mitto-ch-post-api-v11-customers-customerid-request-schema.json
+  - type: JSONSchema
+    url: json-schema/mitto-ch-post-api-v1-customers-customerid-request-schema.json
+  - type: JSONSchema
+    url: json-schema/mitto-ch-post-api-v11-v11-id-response-schema.json
+- aid: mitto-ch:mitto-ch-mitto-api-api
+  name: Mitto Mitto API
+  description: The Mitto API API from Mitto — 4 operation(s) for mitto api.
+  humanURL: https://documentation.mitto.ch/apis/chat-apps/api/messages.md
+  baseURL: https://messaging.mittoapi.com
+  tags:
+  - Mitto API
+  properties:
+  - type: OpenAPI
+    url: openapi/mitto-ch-mitto-api-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/mitto-ch-get-api-v1-v1-id-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/mitto-ch-post-api-v1-webhooks-request-schema.json
+  - type: JSONSchema
+    url: json-schema/mitto-ch-put-api-v1-webhooks-id-request-schema.json
+  - type: JSONSchema
+    url: json-schema/mitto-ch-post-api-v11-customers-customerid-request-schema.json
+  - type: JSONSchema
+    url: json-schema/mitto-ch-post-api-v1-customers-customerid-request-schema.json
+  - type: JSONSchema
+    url: json-schema/mitto-ch-post-api-v11-v11-id-response-schema.json
+- aid: mitto-ch:mitto-ch-statistic-api
+  name: Mitto Statistic API
+  description: The Statistic API from Mitto — 2 operation(s) for statistic.
+  humanURL: https://documentation.mitto.ch/apis/chat-apps/api/messages.md
+  baseURL: https://messaging.mittoapi.com
+  tags:
+  - Statistic
+  properties:
+  - type: OpenAPI
+    url: openapi/mitto-ch-statistic-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/mitto-ch-get-api-v1-v1-id-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/mitto-ch-post-api-v1-webhooks-request-schema.json
+  - type: JSONSchema
+    url: json-schema/mitto-ch-put-api-v1-webhooks-id-request-schema.json
+  - type: JSONSchema
+    url: json-schema/mitto-ch-post-api-v11-customers-customerid-request-schema.json
+  - type: JSONSchema
+    url: json-schema/mitto-ch-post-api-v1-customers-customerid-request-schema.json
+  - type: JSONSchema
+    url: json-schema/mitto-ch-post-api-v11-v11-id-response-schema.json
+- aid: mitto-ch:mitto-ch-webhooks-api
+  name: Mitto Webhooks API
+  description: The Webhooks API from Mitto — 2 operation(s) for webhooks.
+  humanURL: https://documentation.mitto.ch/apis/chat-apps/api/messages.md
+  baseURL: https://messaging.mittoapi.com
+  tags:
+  - Webhooks
+  properties:
+  - type: OpenAPI
+    url: openapi/mitto-ch-webhooks-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/mitto-ch-get-api-v1-v1-id-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/mitto-ch-post-api-v1-webhooks-request-schema.json
+  - type: JSONSchema
+    url: json-schema/mitto-ch-put-api-v1-webhooks-id-request-schema.json
+  - type: JSONSchema
+    url: json-schema/mitto-ch-post-api-v11-customers-customerid-request-schema.json
+  - type: JSONSchema
+    url: json-schema/mitto-ch-post-api-v1-customers-customerid-request-schema.json
+  - type: JSONSchema
+    url: json-schema/mitto-ch-post-api-v11-v11-id-response-schema.json
 x-coverage:
   state: unreadable
   reason: js-rendered-docs

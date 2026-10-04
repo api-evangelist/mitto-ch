@@ -1,0 +1,111 @@
+openapi: 3.2.0
+info:
+  title: Mitto Auto Reply Configs API
+  version: '2026-10-03'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-10-03: 17 operation(s) read from 7 public documentation page(s) (each operation names its page in x-source). This is not the provider''s published contract; Mitto has published no machine-readable contract that the pipeline could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 0
+    documentation: 17
+    pages-with-code: 0
+    pages-read: 7
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-10-03'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://documentation.mitto.ch/apis/chat-apps/api/messages.md
+  - https://documentation.mitto.ch/apis/chat-apps/api/webhooks.md
+  - https://documentation.mitto.ch/apis/chat-apps/api/customers.md
+  - https://documentation.mitto.ch/apis/chat-apps/api/statistic.md
+  - https://documentation.mitto.ch/apis/chat-apps/api/traffic-accounts.md
+  - https://documentation.mitto.ch/apis/sms/about-the-sms-api-reference.md
+  - https://documentation.mitto.ch/apis/chat-apps/api/auto-reply-configs.md
+servers:
+- url: https://messaging.mittoapi.com
+security:
+- X-Mitto-API-Key: []
+tags:
+- name: AutoReplyConfigs
+paths:
+  /api/v1.1/AutoReplyConfigs/{id}/trafficAccounts/{trafficaccountid}:
+    delete:
+      operationId: delete_api_v1_1_AutoReplyConfigs_id_trafficAccounts_trafficaccountid
+      tags:
+      - AutoReplyConfigs
+      summary: Unlink auto reply config from traffic account
+      x-source: https://documentation.mitto.ch/apis/chat-apps/api/auto-reply-configs.md
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: trafficaccountid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DeleteApiV11AutoreplyconfigsIdTrafficaccountsTrafficaccounti'
+      x-evidence:
+        kind: documentation
+    post:
+      operationId: post_api_v1_1_AutoReplyConfigs_id_trafficAccounts_trafficaccountid
+      tags:
+      - AutoReplyConfigs
+      summary: Link auto reply config to traffic account "Linking/unlinking" config to TA will…
+      description: Link auto reply config to traffic account
+      x-source: https://documentation.mitto.ch/apis/chat-apps/api/auto-reply-configs.md
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: trafficaccountid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '201':
+          description: Success (status as documented)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PostApiV11AutoreplyconfigsIdTrafficaccountsTrafficaccountidR'
+      x-evidence:
+        kind: documentation
+components:
+  schemas:
+    DeleteApiV11AutoreplyconfigsIdTrafficaccountsTrafficaccounti:
+      type: object
+      properties:
+        '200':
+          type: string
+        '400':
+          type: string
+        '403':
+          type: string
+    PostApiV11AutoreplyconfigsIdTrafficaccountsTrafficaccountidR:
+      type: object
+      properties:
+        '200':
+          type: string
+        '400':
+          type: string
+        '403':
+          type: string
+  securitySchemes:
+    X-Mitto-API-Key:
+      type: apiKey
+      in: header
+      name: X-Mitto-API-Key
+      x-source: https://documentation.mitto.ch/solutions/editor/preferences/api-keys.md

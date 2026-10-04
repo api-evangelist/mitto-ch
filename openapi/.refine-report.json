@@ -1,0 +1,44 @@
+{
+  "provider": "mitto-ch",
+  "sources": [
+    "_ae-authored/mitto-ch-openapi-generated.yml"
+  ],
+  "outputs": [
+    "mitto-ch-apis-api-openapi.yml",
+    "mitto-ch-autoreplyconfigs-api-openapi.yml",
+    "mitto-ch-customers-api-openapi.yml",
+    "mitto-ch-mitto-api-api-openapi.yml",
+    "mitto-ch-statistic-api-openapi.yml",
+    "mitto-ch-webhooks-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [
+    "sourced from openapi/_original/ (0 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "mitto-ch-openapi-generated.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "mitto-ch-openapi-generated.yml: tagged paths DELETE /api/v1.1/AutoReplyConfigs/{id}/trafficAccounts/{trafficaccountid} -> AutoReplyConfigs",
+    "mitto-ch-openapi-generated.yml: tagged paths POST /api/v1.1/AutoReplyConfigs/{id}/trafficAccounts/{trafficaccountid} -> AutoReplyConfigs",
+    "mitto-ch-openapi-generated.yml: tagged paths POST /api/v1.1/Customers/{customerid} -> Customers",
+    "mitto-ch-openapi-generated.yml: tagged paths GET /api/v1.1/Statistic/{statisticid} -> Statistic",
+    "mitto-ch-openapi-generated.yml: tagged paths GET /api/v1.1/{v11id} -> Mitto API",
+    "mitto-ch-openapi-generated.yml: tagged paths POST /api/v1.1/{v11id} -> Mitto API",
+    "mitto-ch-openapi-generated.yml: tagged paths DELETE /api/v1.1/{v11id}/{id} -> Mitto API",
+    "mitto-ch-openapi-generated.yml: tagged paths GET /api/v1.1/{v11id}/{id} -> Mitto API",
+    "mitto-ch-openapi-generated.yml: tagged paths PUT /api/v1.1/{v11id}/{id} -> Mitto API",
+    "mitto-ch-openapi-generated.yml: tagged paths POST /api/v1/Customers/{customerid} -> Customers",
+    "mitto-ch-openapi-generated.yml: tagged paths GET /api/v1/Statistic/{statisticid} -> Statistic",
+    "mitto-ch-openapi-generated.yml: tagged paths POST /api/v1/Webhooks -> Webhooks",
+    "mitto-ch-openapi-generated.yml: tagged paths DELETE /api/v1/Webhooks/{id} -> Webhooks",
+    "mitto-ch-openapi-generated.yml: tagged paths PUT /api/v1/Webhooks/{id} -> Webhooks",
+    "mitto-ch-openapi-generated.yml: tagged paths GET /api/v1/{v1id} -> Mitto API",
+    "mitto-ch-openapi-generated.yml: tagged paths GET /api/v1/{v1id}/{id} -> Mitto API",
+    "mitto-ch-openapi-generated.yml: declared missing tag: AutoReplyConfigs",
+    "mitto-ch-openapi-generated.yml: declared missing tag: Customers",
+    "mitto-ch-openapi-generated.yml: declared missing tag: Mitto API",
+    "mitto-ch-openapi-generated.yml: declared missing tag: Statistic",
+    "mitto-ch-openapi-generated.yml: declared missing tag: Webhooks",
+    "apis.yml register: written (+6 apis, 6 total)"
+  ],
+  "skipped": []
+}
