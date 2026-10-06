@@ -22,7 +22,7 @@ specificationVersion: '0.20'
 
 created: '2026-10-03'
 
-modified: '2026-10-03'
+modified: '2026-10-06'
 
 tags:
 - Messaging
@@ -38,6 +38,8 @@ maintainers:
   email: info@apis.io
 
 common:
+- url: https://mitto.ch/feed/
+  type: BlogRSS
 - type: GettingStarted
   url: https://documentation.mitto.ch/getting-started/quickstart
 - type: Spectral
