@@ -108,53 +108,6 @@ paths:
         kind: documentation
 components:
   schemas:
-    DeleteApiV1WebhooksIdResponse:
-      type: object
-      properties:
-        '200':
-          type: string
-        '400':
-          type: string
-        '403':
-          type: string
-    PutApiV1WebhooksIdResponse:
-      type: object
-      properties:
-        '200':
-          type: string
-          description: Updated webhook
-        '400':
-          type: string
-        '403':
-          type: string
-    PostApiV1WebhooksResponse:
-      type: object
-      properties:
-        '201':
-          type: string
-          description: Created webhook
-        '400':
-          type: string
-        '403':
-          type: string
-    PutApiV1WebhooksIdRequest:
-      type: object
-      properties:
-        url:
-          type: string
-          description: Webhook url
-        description:
-          type: string
-          description: Webhook description to give it some extra info
-        webhookTriggers:
-          type: string
-          description: Webhook triggers list
-        headers:
-          type: string
-          description: Webhook http headers (optional)
-        linkTrafficAccountIds:
-          type: string
-          description: List of existing traffic account Ids to link to this webhook. Optional.
     PostApiV1WebhooksRequest:
       type: object
       properties:
@@ -173,6 +126,53 @@ components:
         linkTrafficAccountIds:
           type: string
           description: List of existing traffic account Ids to link to this webhook. Optional.
+    PutApiV1WebhooksIdRequest:
+      type: object
+      properties:
+        url:
+          type: string
+          description: Webhook url
+        description:
+          type: string
+          description: Webhook description to give it some extra info
+        webhookTriggers:
+          type: string
+          description: Webhook triggers list
+        headers:
+          type: string
+          description: Webhook http headers (optional)
+        linkTrafficAccountIds:
+          type: string
+          description: List of existing traffic account Ids to link to this webhook. Optional.
+    PutApiV1WebhooksIdResponse:
+      type: object
+      properties:
+        '200':
+          type: string
+          description: Updated webhook
+        '400':
+          type: string
+        '403':
+          type: string
+    DeleteApiV1WebhooksIdResponse:
+      type: object
+      properties:
+        '200':
+          type: string
+        '400':
+          type: string
+        '403':
+          type: string
+    PostApiV1WebhooksResponse:
+      type: object
+      properties:
+        '201':
+          type: string
+          description: Created webhook
+        '400':
+          type: string
+        '403':
+          type: string
   securitySchemes:
     X-Mitto-API-Key:
       type: apiKey

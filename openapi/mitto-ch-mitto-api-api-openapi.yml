@@ -227,22 +227,28 @@ paths:
         collapsed_from: 2 example path(s) differing only at v1Id
 components:
   schemas:
-    PostApiV11V11IdResponse:
+    GetApiV11V11IdIdResponse:
       type: object
       properties:
         '200':
           type: string
-          description: Created Get auto reply config
-        '400':
-          type: string
+          description: Auto reply config response
         '403':
           type: string
-    GetApiV1V1IdResponse:
+    GetApiV11V11IdResponse:
       type: object
       properties:
         '200':
           type: string
-          description: Traffic accounts list
+          description: Auto reply configs list
+        '403':
+          type: string
+    PutApiV11V11IdIdResponse:
+      type: object
+      properties:
+        '200':
+          type: string
+          description: Updated auto reply config
         '400':
           type: string
         '403':
@@ -292,20 +298,14 @@ components:
         reference:
           type: string
           description: Metadata for tagging messages
-    GetApiV11V11IdIdResponse:
+    PostApiV11V11IdResponse:
       type: object
       properties:
         '200':
           type: string
-          description: Auto reply config response
-        '403':
+          description: Created Get auto reply config
+        '400':
           type: string
-    GetApiV11V11IdResponse:
-      type: object
-      properties:
-        '200':
-          type: string
-          description: Auto reply configs list
         '403':
           type: string
     DeleteApiV11V11IdIdResponse:
@@ -317,7 +317,7 @@ components:
           type: string
         '403':
           type: string
-    PutApiV11V11IdIdRequest:
+    PostApiV11V11IdRequest:
       type: object
       properties:
         body:
@@ -325,17 +325,17 @@ components:
           description: AutoReplyConfigCreateUpdate
       required:
       - body
-    PutApiV11V11IdIdResponse:
+    GetApiV1V1IdResponse:
       type: object
       properties:
         '200':
           type: string
-          description: Updated auto reply config
+          description: Traffic accounts list
         '400':
           type: string
         '403':
           type: string
-    PostApiV11V11IdRequest:
+    PutApiV11V11IdIdRequest:
       type: object
       properties:
         body:

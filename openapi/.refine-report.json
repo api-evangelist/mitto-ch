@@ -38,7 +38,14 @@
     "mitto-ch-openapi-generated.yml: declared missing tag: Mitto API",
     "mitto-ch-openapi-generated.yml: declared missing tag: Statistic",
     "mitto-ch-openapi-generated.yml: declared missing tag: Webhooks",
-    "apis.yml register: written (+6 apis, 6 total)"
+    "apis.yml register: already-registered"
   ],
-  "skipped": []
+  "skipped": [
+    "mitto-ch-apis-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "mitto-ch-autoreplyconfigs-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "mitto-ch-customers-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "mitto-ch-mitto-api-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "mitto-ch-statistic-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "mitto-ch-webhooks-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }

@@ -113,7 +113,7 @@ paths:
         collapsed_from: 3 example path(s) differing only at statisticId
 components:
   schemas:
-    GetApiV1StatisticStatisticidResponse:
+    GetApiV11StatisticStatisticidResponse:
       type: object
       properties:
         '200':
@@ -123,7 +123,7 @@ components:
           type: string
         '403':
           type: string
-    GetApiV11StatisticStatisticidResponse:
+    GetApiV1StatisticStatisticidResponse:
       type: object
       properties:
         '200':
