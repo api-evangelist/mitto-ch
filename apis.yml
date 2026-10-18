@@ -29,6 +29,11 @@ tags:
 - Omnichannel
 - Communications
 - Enterprise
+tags_raw:
+- Messaging
+- Omnichannel
+- Communications
+- Enterprise
 - API
 
 maintainers:
@@ -91,7 +96,8 @@ apis:
   description: The Apis API from Mitto — 1 operation(s) for apis.
   humanURL: https://documentation.mitto.ch/apis/chat-apps/api/messages.md
   baseURL: https://messaging.mittoapi.com
-  tags:
+  tags: []
+  tags_raw:
   - Apis
   properties:
   - type: OpenAPI
@@ -180,6 +186,8 @@ apis:
   humanURL: https://documentation.mitto.ch/apis/chat-apps/api/messages.md
   baseURL: https://messaging.mittoapi.com
   tags:
+  - statistic
+  tags_raw:
   - Statistic
   properties:
   - type: OpenAPI
@@ -202,6 +210,8 @@ apis:
   humanURL: https://documentation.mitto.ch/apis/chat-apps/api/messages.md
   baseURL: https://messaging.mittoapi.com
   tags:
+  - Webhook
+  tags_raw:
   - Webhooks
   properties:
   - type: OpenAPI
