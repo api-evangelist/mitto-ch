@@ -64,5 +64,127 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Mitto is a company surfaced via the API Evangelist harvest backlog (source: gartner-mq) and added to the network as a stub for full-pipeline profiling.
-- https://www.mitto.ch
+Mitto provides omnichannel messaging solutions, enabling businesses to engage customers across SMS, RCS, voice, Telegram, Viber, WhatsApp, Facebook Messenger, and Instagram. Their platform offers products for campaigns, conversations, number lookup, verification, and integrates with HubSpot, Salesforce, Zoho, and Oracle Responsys. Mitto aims to streamline communication, improve customer experiences, and support omnichannel strategies for enterprises worldwide.
+
+**Areas:** Messaging · Omnichannel · Communications · Enterprise
+
+## Mitto on APIs.io
+
+Everything profiled for Mitto is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/mitto-ch/](https://apis.io/providers/mitto-ch/)** — or go straight to one of the APIs or properties below.
+
+### APIs (6)
+
+- [Mitto APIs API](https://apis.io/apis/mitto-ch/mitto-ch-apis-api/) — The Apis API from Mitto — 1 operation(s) for apis.
+- [Mitto Auto Reply Configs API](https://apis.io/apis/mitto-ch/mitto-ch-autoreplyconfigs-api/) — The AutoReplyConfigs API from Mitto — 1 operation(s) for autoreplyconfigs.
+- [Mitto Customers API](https://apis.io/apis/mitto-ch/mitto-ch-customers-api/) — The Customers API from Mitto — 2 operation(s) for customers.
+- [Mitto Mitto API](https://apis.io/apis/mitto-ch/mitto-ch-mitto-api-api/) — The Mitto API API from Mitto — 4 operation(s) for mitto api.
+- [Mitto Statistic API](https://apis.io/apis/mitto-ch/mitto-ch-statistic-api/) — The Statistic API from Mitto — 2 operation(s) for statistic.
+- [Mitto Webhooks API](https://apis.io/apis/mitto-ch/mitto-ch-webhooks-api/) — The Webhooks API from Mitto — 2 operation(s) for webhooks.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [mitto-ch-mcp.yml](https://apis.io/servers/mitto-ch/mitto-ch-mcp-yml/)
+
+#### JSON Schema (6)
+
+The data models the API reads and writes.
+
+- [GetApiV1V1IdIdResponse](https://apis.io/schemas/mitto-ch/mitto-ch-get-api-v1-v1-id-id-response/)
+- [PostApiV1CustomersCustomeridRequest](https://apis.io/schemas/mitto-ch/mitto-ch-post-api-v1-customers-customerid-request/)
+- [PostApiV1WebhooksRequest](https://apis.io/schemas/mitto-ch/mitto-ch-post-api-v1-webhooks-request/)
+- [PostApiV11CustomersCustomeridRequest](https://apis.io/schemas/mitto-ch/mitto-ch-post-api-v11-customers-customerid-request/)
+- [PostApiV11V11IdResponse](https://apis.io/schemas/mitto-ch/mitto-ch-post-api-v11-v11-id-response/)
+- [PutApiV1WebhooksIdRequest](https://apis.io/schemas/mitto-ch/mitto-ch-put-api-v1-webhooks-id-request/)
+
+#### JSON-LD (1)
+
+Linked-data contexts for the provider's vocabulary.
+
+- [Mitto Ch Context](https://apis.io/jsonld/mitto-ch/mitto-ch-context/)
+
+#### Governance rules (1)
+
+Spectral rulesets for the provider's contracts.
+
+- [Mitto API Rules](https://apis.io/rules/mitto-ch/mitto-ch-rules/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Mitto Ch Authentication](https://apis.io/security/mitto-ch/mitto-ch-authentication/)
+- [Mitto Ch Domain Security](https://apis.io/security/mitto-ch/mitto-ch-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.mitto.ch)
+- [Documentation](https://documentation.mitto.ch)
+- [Getting started](https://documentation.mitto.ch/getting-started/quickstart)
+- [API reference](https://documentation.mitto.ch/api-reference.md)
+- [Pricing](https://mitto.ch/pricing/)
+- [Sign up](https://dashboard.mitto.ch/signup)
+- [Support](https://mitto.ch/contact/)
+- [Blog](https://mitto.ch/blog/)
+- [Privacy policy](https://mitto.ch/privacy-policy)
+- [Status](https://status.mitto.ch/)
+
+## API Evangelist rating
+
+**Kin Score 36.2** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 69.6 |
+| Contract quality | 25.9 |
+| Contract governance | 35.6 |
+| Operational transparency | 15.8 |
+| Developer ergonomics | 47.6 |
+| Access clarity | 34.2 |
+
+**Agent readiness 27.3** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | served (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | served (partial credit) |
+| Protected Resource Metadata | verified |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 20.6** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/mitto-ch/](https://apis.io/providers/mitto-ch/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Mitto: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/mitto-ch/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
